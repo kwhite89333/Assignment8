@@ -1,0 +1,76 @@
+/* 
+    Document   : stylesheet
+    Created on : Oct 23, 2014, 1:18:27 PM
+    Author     : Kyle White
+*/
+
+root { 
+    display: block;
+}
+
+/* Styles the entire body of the page */
+body{
+    /* background: url(background1.jpg); */
+    background-color: gray;
+    background-repeat: no-repeat;
+}
+    
+/* Styles the header of the table */
+th{
+    text-align: center;
+    color: orange;
+    text-shadow: 2px 2px 2px black;
+    padding: 5px;
+    background-color: black;
+}
+
+/* Selects the top left corner of the table which has the id "topLeft"*/
+#topLeft{
+    background-color: gray;
+}
+
+/* Only will style every other row of the table */
+tr:nth-child(odd){
+    background-color: #999999;  /* light gray */
+}
+
+/* Styles each cell of the table */
+td{
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* Styles the table itself */
+table{
+    margin: auto auto;
+}
+
+/* Styles the bar of values at the top of the page containing the values that
+   are input by the user */
+#valueBar{
+    float: left;
+    width: 100%;
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    margin-bottom: 20px;
+}
+
+/* When the user gives an incorrect input, the page will throw some error
+   messages to help the user debug the issue at hand.  This selector styles
+   those messages */
+#errorMessages{
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+}
+
+#tabs{
+    float: left;
+    background-color: red;
+}
